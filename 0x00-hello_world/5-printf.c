@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * Description : a program that prints the following
- * main(void): indicate that the function takes no arguments
+ * Description : a C program that prints with printf function
+ * main: Entry point
  * return: Always 0 (Success)
  */
 int main(void)
