@@ -12,9 +12,13 @@ int main(void)
 {
 	int i;
 
+	char output[11];
+
 	for (i = 0; i < 10; i++)
 	{
-		printf("%i\n", i);
+		output[i] = i + '0';
 	}
+		output[10] = '\0';
+		printf("%s", output);
 	return (0);
 }
