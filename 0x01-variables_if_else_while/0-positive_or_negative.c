@@ -2,10 +2,15 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main: Entry pont
+
+/**
+ * main - Entry point
  *
- *Return>: 0 ( success )
- */
+ * Description: a c program that prints random numbers
+ *
+ * Return: Always 0 (Success)
+*/
+
 int main(void)
 {
 	int n;
@@ -13,12 +18,13 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
+	/*my code*/
 	if (n > 0)
-		printf("%i is a positive number.\n", n);
+		printf("%i is positive\n", n);
 	else if (n == 0)
-		printf("%i is a negative number.\n", n);
+		printf("%i is zero\n", n);
 	else
-		printf("%i is zero.\n", n);
+		printf("%i is negative\n", n);
 
 	return (0);
 }
