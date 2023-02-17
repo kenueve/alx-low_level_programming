@@ -10,15 +10,14 @@
 
 int main(void)
 {
-	int i;
+	int digit = 0;
 
-	char output[11];
-
-	for (i = 0; i < 10; i++)
+	while (digit <= 9)
 	{
-		output[i] = i + '0';
+		printf("%i", digit);
+		++digit;
 	}
-		output[10] = '\0';
-		printf("%s", output);
+	printf("\n");
+
 	return (0);
 }
