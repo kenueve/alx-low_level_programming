@@ -9,20 +9,29 @@
 */
 int main(void)
 {
-	int i, j;
+	int digit1 = 0, digit2;
 
-	for (i = 0; i < 9; i++)
+	while (digit1 <= 9)
 	{
-		for (j = i + 1; j <= 9; j++)
+		digit2 = 0;
+		while (digit2 <= 9)
 		{
-			putchar(j + '0');
-			putchar(j + '0');
-			if (i < 8 || j < 9)
+			if (digit1 != digit2 && digit1 < digit2)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(digit1 + 48);
+				putchar(digit2 + 48);
+
+				if (digit1 + digit2 != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+			++digit2;
 		}
+		++digit1;
 	}
+	putchar('\n');
+
 	return (0);
 }
