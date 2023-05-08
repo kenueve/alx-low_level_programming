@@ -1,14 +1,11 @@
 #include "main.h"
 
 /**
- * READTESTFILE - PRINTS THE LETTERS
- * OF .TXT
+ * READTESTFILE - PRINTS THE LETTERS OF .TXT
  * @filename: FILENAME.
- * @letters: THE NUM OF LETTERS 
- * TO Be PRINTED
+ * @letters: THE NUM OF LETTERS TO Be PRINTED
  *
- * RETURN: PRINTED LETTERS NUM.
- * IF IT FAILS R0.
+ * RETURN: PRINTED LETTERS NUM.IF IT FAILS R0.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
