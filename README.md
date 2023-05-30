@@ -1,2 +1,3 @@
-# This repository conatains some of alx low level programming!!
+# This repository conatains some of alx low level programming projects!!
+
 
